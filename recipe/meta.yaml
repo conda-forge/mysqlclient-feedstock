@@ -15,11 +15,13 @@ build:
   skip: True  # [win]
 
 requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - python
     - pip
     - mysql-connector-c
-
   run:
     - python
     - mysql-connector-c
