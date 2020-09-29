@@ -3,7 +3,7 @@ About mysqlclient
 
 Home: https://github.com/PyMySQL/mysqlclient-python
 
-Package license: GPL-2.0
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD-3-Clause
 
