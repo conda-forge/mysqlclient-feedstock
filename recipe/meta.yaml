@@ -1,5 +1,5 @@
 {% set name = "mysqlclient" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fb2f75aea14722390d2d8ddf384ad99da708c707a96656210a7be8af20a2c5e5
+  sha256: f6ebea7c008f155baeefe16c56cd3ee6239f7a5a9ae42396c2f1860f08a7c432
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  number: 0
+  script: 
+    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win]
 
 requirements:
@@ -21,10 +22,10 @@ requirements:
   host:
     - python
     - pip
-    - mysql-connector-c
+    # provides mysql-libs via a run_export
+    - mysql-devel
   run:
     - python
-    - mysql-connector-c
 
 test:
   imports:
