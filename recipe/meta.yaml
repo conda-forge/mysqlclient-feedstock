@@ -22,11 +22,10 @@ requirements:
   host:
     - python
     - pip
+    # provides mysql-libs via a run_export
     - mysql-devel
-    - mysql-libs
   run:
     - python
-    - mysql-libs
 
 test:
   imports:
