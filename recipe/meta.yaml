@@ -12,8 +12,6 @@ source:
 build:
   number: 0
   script: 
-    - export MYSQLCLIENT_LDFLAGS="${LDFLAGS}"  # [unix]
-    - export MYSQLCLIENT_CFLAGS="${CFLAGS}"    # [unix]
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [win]
 
