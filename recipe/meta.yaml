@@ -21,10 +21,10 @@ requirements:
   host:
     - python
     - pip
-    - mysql-connector-c
+    - mysql-libs
   run:
     - python
-    - mysql-connector-c
+    - mysql-libs
 
 test:
   imports:
