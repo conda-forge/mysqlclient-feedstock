@@ -24,6 +24,7 @@ requirements:
   host:
     - python
     - pip
+    - mysql-devel
     - mysql-libs
   run:
     - python
