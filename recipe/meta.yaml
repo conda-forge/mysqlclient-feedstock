@@ -13,6 +13,8 @@ build:
   number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script_env:
+    - MYSQLCLIENT_CONNECTOR={{ PREFIX }}  # [win]
 
 requirements:
   build:
@@ -26,6 +28,7 @@ requirements:
     - pip
     # provides mysql-libs via a run_export
     - mysql-devel
+    - mariadb-connector-c ==3.3.5 # [win]
   run:
     - python
 
