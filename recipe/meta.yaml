@@ -28,7 +28,7 @@ requirements:
     - pip
     # provides mysql-libs via a run_export
     - mysql-devel
-    - mariadb-connector-c ==3.3.5 # [win]
+    - mariadb-connector-c ==3.3.5  # [win]
   run:
     - python
 
