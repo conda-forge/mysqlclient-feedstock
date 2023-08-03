@@ -14,7 +14,7 @@ build:
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   script_env:
-    - MYSQLCLIENT_CONNECTOR={{ PREFIX }}  # [win]
+    - MYSQLCLIENT_CONNECTOR={{ LIBRARY_PREFIX }}  # [win]
 
 requirements:
   build:
