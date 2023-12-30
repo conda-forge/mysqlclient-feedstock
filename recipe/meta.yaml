@@ -10,10 +10,11 @@ source:
   sha256: 2c7ad15b87293b12fd44b47c46879ec95ec647f4567e866ccd70b8337584e9b2
 
 build:
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  skip: true  # [win]
+  script_env:
+    - MYSQLCLIENT_CONNECTOR={{ LIBRARY_PREFIX }}  # [win]
 
 requirements:
   build:
@@ -27,6 +28,7 @@ requirements:
     - pip
     # provides mysql-libs via a run_export
     - mysql-devel
+    - mariadb-connector-c ==3.3.5  # [win]
   run:
     - python
 
