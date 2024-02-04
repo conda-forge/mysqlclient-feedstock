@@ -1,5 +1,5 @@
 {% set name = "mysqlclient" %}
-{% set version = "2.2.1" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2c7ad15b87293b12fd44b47c46879ec95ec647f4567e866ccd70b8337584e9b2
+  sha256: 6f57715fb08c80ab80d34febe0aa8ef8810e52d527ad7da2da76e8ce25e2f2e9
 
 build:
   number: 0
