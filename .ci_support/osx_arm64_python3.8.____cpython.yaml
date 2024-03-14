@@ -14,6 +14,8 @@ cxx_compiler_version:
 - '16'
 macos_machine:
 - arm64-apple-darwin20.0.0
+mysql_devel:
+- '8.3'
 pin_run_as_build:
   python:
     min_pin: x.x
