@@ -361,5 +361,5 @@ Feedstock Maintainers
 =====================
 
 * [@halldc](https://github.com/halldc/)
-* [@jimbudarz](https://github.com/jimbudarz/)
+* [@InterferencePattern](https://github.com/InterferencePattern/)
 
