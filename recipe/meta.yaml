@@ -27,6 +27,7 @@ requirements:
     - pip
     # provides mysql-libs via a run_export
     - mysql-devel
+    - setuptools
   run:
     - python
 
