@@ -12,7 +12,7 @@ source:
 build:
   number: 1
   script:
-    - MYSQLCLIENT_CONNECTOR="%LIBRARY_PREFIX%"  # [win]
+    - set MYSQLCLIENT_CONNECTOR="%LIBRARY_PREFIX%"  # [win]
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
