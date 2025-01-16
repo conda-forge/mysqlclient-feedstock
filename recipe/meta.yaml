@@ -29,7 +29,7 @@ requirements:
     - setuptools
     # provides mysql-libs via a run_export
     - mysql-devel
-    - mariadb-connector-c ==3.4.1  # [win]
+    - mariadb-connector-c ==3.4.3  # [win]
   run:
     - python
 
