@@ -369,4 +369,5 @@ Feedstock Maintainers
 
 * [@InterferencePattern](https://github.com/InterferencePattern/)
 * [@halldc](https://github.com/halldc/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
