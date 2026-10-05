@@ -18,6 +18,8 @@ build:
     - if: unix
       then:
         - python -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+      # rattler-build >=0.59 no longer falls back to build.bat for an empty script
+      else: build.bat
 
 requirements:
   build:
