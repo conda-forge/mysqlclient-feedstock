@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mysqlclient
-  version: "2.3.0"
+  version: "2.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: bea8294964266f6486f1ca514ccfcdbc54d4fe0d32882b38c1d4594df870be8b
+  sha256: c07e1b83b530fd6c5888259f36afad1980d21fcb33ba97384650dd23c8f73ea8
 
 build:
-  number: 1
+  number: 0
   script:
     - if: unix
       then:
